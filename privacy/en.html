@@ -26,7 +26,7 @@
 <main>
 <nav><a href="../privacy/zh-Hans.html">简体中文</a><a href="../privacy/zh-Hant.html">繁體中文</a><a href="../privacy/en.html" class="on">English</a><a href="../privacy/ja.html">日本語</a><span class="sep"></span><a href="../terms/en.html">Terms of Use</a></nav>
 <h1>Shen Gui Pai — Privacy Policy</h1>
-<p class="meta">Effective date: 2026-11-08 · Developer: [开发者名称]</p>
+<p class="meta">Effective date: 2026-11-09 · Developer: [开发者名称]</p>
 
 <p>This policy explains what information Shen Gui Pai (“the Game”) collects, how it is used and protected, and how you can manage or delete it. The Game is an online 1-vs-1 card battle game and collects only the minimum information needed to run.</p>
 
@@ -38,21 +38,24 @@
   <tr><td>Avatar choice</td><td>Shown in the lobby and in matches</td><td>Server, until you delete your account</td></tr>
   <tr><td>Sign-in token</td><td>Keeps you signed in between launches. The server stores only a SHA-256 digest of it</td><td>Your device and the server; expires after 30 days without use, and is revoked immediately when you log out, sign in on another device, or delete your account</td></tr>
   <tr><td>IP address</td><td>Network connection, rate-limiting sign-in attempts, troubleshooting</td><td>Used during the connection; may appear in server logs used only for troubleshooting and cleared periodically</td></tr>
-  <tr><td>Match data (cards played, scores)</td><td>Running and scoring matches</td><td>Held in server memory during the match; not stored long-term</td></tr>
+  <tr><td>Rating, rank and match history (both line-ups, scores, result, rating change)</td><td>Showing your record, match history and rank; computing ranked rating</td><td>Server. When you delete your account, your username is removed from match records (only anonymous match data is kept)</td></tr>
+  <tr><td>Friends, friend requests and block list</td><td>Friends, friendly matches and blocking</td><td>Server, until you remove the friend / unblock, or either player deletes their account</td></tr>
+  <tr><td>Private chat messages</td><td>Chatting with friends</td><td>Server, until you or the other player deletes their account</td></tr>
+  <tr><td>Reports</td><td>Handling misconduct</td><td>Server. When you delete your account, your username is removed from reports</td></tr>
   <tr><td>Local settings (language, volume)</td><td>Remembering your preferences</td><td>Your device only</td></tr>
 </table>
 <p>The Game does <strong>not</strong> collect your real name, phone number, email address, contacts, location, photos, or advertising identifier (IDFA). It contains no ads and no third-party analytics or advertising SDKs.</p>
 
 <h2>2. Use and sharing</h2>
-<p>This information is used only to provide the Game. We do not sell, rent, or share it with third parties, except where required by law or necessary to protect players and the service. Your username and avatar are visible to the players you are matched against.</p>
+<p>This information is used only to provide the Game. We do not sell, rent, or share it with third parties, except where required by law or necessary to protect players and the service. Your username, avatar and rank are visible to the players you are matched against and to your friends; other players can find you by username and send you a friend request; private messages are visible only to you and the other player.</p>
 
 <h2>3. Security</h2>
-<p>All traffic between the app and the server is encrypted with TLS. Passwords and sign-in tokens are stored on the server only as one-way hashes. The server is located in [服务器所在地区].</p>
+<p>All traffic between the app and the server is encrypted with TLS; the in-match fast path (UDP) is also encrypted and integrity-checked, with keys delivered only over TLS. Passwords and sign-in tokens are stored on the server only as one-way hashes. The server is located in [服务器所在地区].</p>
 
 <h2>4. Your choices: log out and account deletion</h2>
 <ul>
-  <li><strong>Log out</strong>: Lobby → Settings → “Log out” removes the saved sign-in token from your device and revokes it on the server.</li>
-  <li><strong>Delete account</strong>: Lobby → Settings → “Delete account”, then confirm. The server immediately and permanently deletes your account, password hash, avatar and sign-in token. This cannot be undone.</li>
+  <li><strong>Log out</strong>: tap your own avatar in the lobby to open your profile, then “Log out”. This removes the saved sign-in token from your device and revokes it on the server.</li>
+  <li><strong>Delete account</strong>: in your profile, tap “Delete account” and confirm. The server immediately and permanently deletes your account, password hash, avatar, sign-in token, friends, block list and private messages, and removes your username from match records and reports. This cannot be undone.</li>
   <li>For questions about your information or this policy, contact [联系邮箱].</li>
 </ul>
 
