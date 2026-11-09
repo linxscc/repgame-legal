@@ -1,0 +1,8 @@
+<!doctype html><meta charset="utf-8"><title>神鬼牌</title>
+<script>
+var l=(navigator.languages&&navigator.languages[0]||navigator.language||"en").toLowerCase(),c="en";
+if(/^zh-(hant|tw|hk|mo)/.test(l))c="zh-Hant";else if(l.indexOf("zh")==0)c="zh-Hans";else if(l.indexOf("ja")==0)c="ja";
+var q=new URLSearchParams(location.search).get("lang");if(q&&["zh-Hans","zh-Hant","en","ja"].indexOf(q)>=0)c=q;
+location.replace(c+".html");
+</script>
+<noscript><a href="en.html">English</a> · <a href="zh-Hans.html">简体中文</a> · <a href="zh-Hant.html">繁體中文</a> · <a href="ja.html">日本語</a></noscript>

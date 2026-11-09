@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · 神鬼牌</title>
+<style>
+  :root { --ink:#1f2a2a; --soft:#5a6b69; --paper:#f4f1ea; --line:#cfd8d4; --red:#b8322a; }
+  body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.7 -apple-system, "PingFang SC", "Hiragino Sans", "Noto Sans CJK SC", sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:24px 16px 64px; }
+  nav { display:flex; flex-wrap:wrap; gap:6px 14px; font-size:14px; padding-bottom:12px; border-bottom:1px solid var(--line); margin-bottom:20px; }
+  nav a { color:var(--soft); text-decoration:none; }
+  nav a.on { color:var(--red); font-weight:600; }
+  nav .sep { flex:1; }
+  h1 { font-size:24px; margin:0 0 4px; }
+  h2 { font-size:18px; margin:28px 0 8px; border-left:4px solid var(--red); padding-left:10px; }
+  .meta { color:var(--soft); font-size:14px; }
+  table { border-collapse:collapse; width:100%; font-size:15px; }
+  th, td { border:1px solid var(--line); padding:6px 8px; text-align:left; vertical-align:top; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#e6ebe9; --soft:#9fb0ad; --paper:#141a19; --line:#2c3836; --red:#e0675d; }
+  }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="../privacy/zh-Hans.html">简体中文</a><a href="../privacy/zh-Hant.html">繁體中文</a><a href="../privacy/en.html" class="on">English</a><a href="../privacy/ja.html">日本語</a><span class="sep"></span><a href="../terms/en.html">Terms of Use</a></nav>
+<h1>Shen Gui Pai — Privacy Policy</h1>
+<p class="meta">Effective date: 2026-11-08 · Developer: [开发者名称]</p>
+
+<p>This policy explains what information Shen Gui Pai (“the Game”) collects, how it is used and protected, and how you can manage or delete it. The Game is an online 1-vs-1 card battle game and collects only the minimum information needed to run.</p>
+
+<h2>1. Information we collect</h2>
+<table>
+  <tr><th>Information</th><th>Purpose</th><th>Where and how long</th></tr>
+  <tr><td>Username</td><td>Sign-in; shown to your opponent in matches</td><td>Server, until you delete your account</td></tr>
+  <tr><td>Password</td><td>Authentication. The server stores only a bcrypt hash — never the password itself, and it cannot be recovered from the hash</td><td>Server, until you delete your account</td></tr>
+  <tr><td>Avatar choice</td><td>Shown in the lobby and in matches</td><td>Server, until you delete your account</td></tr>
+  <tr><td>Sign-in token</td><td>Keeps you signed in between launches. The server stores only a SHA-256 digest of it</td><td>Your device and the server; expires after 30 days without use, and is revoked immediately when you log out, sign in on another device, or delete your account</td></tr>
+  <tr><td>IP address</td><td>Network connection, rate-limiting sign-in attempts, troubleshooting</td><td>Used during the connection; may appear in server logs used only for troubleshooting and cleared periodically</td></tr>
+  <tr><td>Match data (cards played, scores)</td><td>Running and scoring matches</td><td>Held in server memory during the match; not stored long-term</td></tr>
+  <tr><td>Local settings (language, volume)</td><td>Remembering your preferences</td><td>Your device only</td></tr>
+</table>
+<p>The Game does <strong>not</strong> collect your real name, phone number, email address, contacts, location, photos, or advertising identifier (IDFA). It contains no ads and no third-party analytics or advertising SDKs.</p>
+
+<h2>2. Use and sharing</h2>
+<p>This information is used only to provide the Game. We do not sell, rent, or share it with third parties, except where required by law or necessary to protect players and the service. Your username and avatar are visible to the players you are matched against.</p>
+
+<h2>3. Security</h2>
+<p>All traffic between the app and the server is encrypted with TLS. Passwords and sign-in tokens are stored on the server only as one-way hashes. The server is located in [服务器所在地区].</p>
+
+<h2>4. Your choices: log out and account deletion</h2>
+<ul>
+  <li><strong>Log out</strong>: Lobby → Settings → “Log out” removes the saved sign-in token from your device and revokes it on the server.</li>
+  <li><strong>Delete account</strong>: Lobby → Settings → “Delete account”, then confirm. The server immediately and permanently deletes your account, password hash, avatar and sign-in token. This cannot be undone.</li>
+  <li>For questions about your information or this policy, contact [联系邮箱].</li>
+</ul>
+
+<h2>5. Children</h2>
+<p>The Game is not directed to children under 13, and we do not knowingly collect their personal information. If you believe we have, please contact us and we will delete it.</p>
+
+<h2>6. Changes</h2>
+<p>We may update this policy as the Game changes. Updates will be posted on this page with a new effective date; significant changes will also be announced in the Game.</p>
+
+</main>
+</body>
+</html>

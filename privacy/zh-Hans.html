@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>隐私政策 · 神鬼牌</title>
+<style>
+  :root { --ink:#1f2a2a; --soft:#5a6b69; --paper:#f4f1ea; --line:#cfd8d4; --red:#b8322a; }
+  body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.7 -apple-system, "PingFang SC", "Hiragino Sans", "Noto Sans CJK SC", sans-serif; }
+  main { max-width:760px; margin:0 auto; padding:24px 16px 64px; }
+  nav { display:flex; flex-wrap:wrap; gap:6px 14px; font-size:14px; padding-bottom:12px; border-bottom:1px solid var(--line); margin-bottom:20px; }
+  nav a { color:var(--soft); text-decoration:none; }
+  nav a.on { color:var(--red); font-weight:600; }
+  nav .sep { flex:1; }
+  h1 { font-size:24px; margin:0 0 4px; }
+  h2 { font-size:18px; margin:28px 0 8px; border-left:4px solid var(--red); padding-left:10px; }
+  .meta { color:var(--soft); font-size:14px; }
+  table { border-collapse:collapse; width:100%; font-size:15px; }
+  th, td { border:1px solid var(--line); padding:6px 8px; text-align:left; vertical-align:top; }
+  @media (prefers-color-scheme: dark) {
+    :root { --ink:#e6ebe9; --soft:#9fb0ad; --paper:#141a19; --line:#2c3836; --red:#e0675d; }
+  }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="../privacy/zh-Hans.html" class="on">简体中文</a><a href="../privacy/zh-Hant.html">繁體中文</a><a href="../privacy/en.html">English</a><a href="../privacy/ja.html">日本語</a><span class="sep"></span><a href="../terms/zh-Hans.html">用户协议</a></nav>
+<h1>神鬼牌 隐私政策</h1>
+<p class="meta">生效日期：2026-11-08　开发者：[开发者名称]</p>
+
+<p>本政策说明「神鬼牌」（以下简称“本游戏”）会收集哪些信息、如何使用和保护这些信息，以及你可以如何管理或删除它们。本游戏是一款在线 1 对 1 卡牌对战游戏，我们只收集运行游戏所必需的最少信息。</p>
+
+<h2>一、我们收集的信息</h2>
+<table>
+  <tr><th>信息</th><th>用途</th><th>保存位置与期限</th></tr>
+  <tr><td>用户名</td><td>登录、在对局中向对手显示</td><td>服务器，直到你注销账号</td></tr>
+  <tr><td>密码</td><td>验证身份。服务器只保存经 bcrypt 处理后的哈希值，不保存、也无法还原密码原文</td><td>服务器，直到你注销账号</td></tr>
+  <tr><td>头像选择</td><td>在大厅和对局中显示</td><td>服务器，直到你注销账号</td></tr>
+  <tr><td>登录凭证（会话令牌）</td><td>让你下次打开游戏时免输密码自动登录。服务器只保存令牌的 SHA-256 摘要</td><td>你的设备与服务器；30 天未使用自动失效，退出登录、在其他设备登录或注销账号时立即作废</td></tr>
+  <tr><td>IP 地址</td><td>建立网络连接、防止暴力尝试登录（限流）、排查故障</td><td>仅在连接期间使用；服务器运行日志中可能出现，仅用于排查问题并定期清理</td></tr>
+  <tr><td>对局数据（出牌、得分等）</td><td>进行对局与结算</td><td>对局进行期间保存在服务器内存中，对局结束后不长期保存</td></tr>
+  <tr><td>本机设置（语言、音量）</td><td>记住你的偏好</td><td>只保存在你的设备上</td></tr>
+</table>
+<p>本游戏<strong>不</strong>收集你的真实姓名、电话号码、电子邮箱、通讯录、位置、照片或设备广告标识符（IDFA），不包含广告，也不接入第三方统计或广告 SDK。</p>
+
+<h2>二、信息的使用与共享</h2>
+<p>上述信息只用于提供游戏服务。我们不会出售、出租你的信息，也不会与第三方共享，除非法律法规要求或为保护用户与服务的安全所必需。你的用户名和头像会显示给与你对战的玩家。</p>
+
+<h2>三、信息安全</h2>
+<p>客户端与服务器之间的所有通信均通过 TLS 加密传输。密码与登录凭证在服务器上只以不可逆的哈希形式保存。服务器位于[服务器所在地区]。</p>
+
+<h2>四、你的权利：退出登录与注销账号</h2>
+<ul>
+  <li><strong>退出登录</strong>：在大厅「设置」中点击「退出登录」，本机保存的登录凭证会被删除，服务器上的对应凭证同时作废。</li>
+  <li><strong>注销账号</strong>：在大厅「设置」中点击「注销账号」并确认，服务器会立即永久删除你的账号、密码哈希、头像与登录凭证，且无法恢复。</li>
+  <li>如需查询或更正你的信息，或对本政策有任何疑问，请联系：[联系邮箱]。</li>
+</ul>
+
+<h2>五、未成年人</h2>
+<p>本游戏不面向 13 岁以下儿童，我们不会有意收集儿童的个人信息。如果你认为我们误收集了儿童的信息，请联系我们删除。</p>
+
+<h2>六、政策更新</h2>
+<p>本政策可能随游戏功能调整而更新，更新后会在本页面公布并修改生效日期。重大变更时会在游戏内提示。</p>
+
+</main>
+</body>
+</html>
